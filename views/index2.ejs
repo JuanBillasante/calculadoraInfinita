@@ -9,7 +9,6 @@
 
 </head>
 <body>
-    
     <div class="container">
         <div class="row">
             <div class="col s12">
@@ -18,16 +17,17 @@
                     <center>Calculadora Infinita</center>
                 </h2>
 
-                <div class="input-field col s12">
+                <div class="input-field col s12 white">
                     <ul class="collection">
-                        <li class="collection-item"></li>
+                        <li class="collection-item"><p><%= data.comando %></p></li>
+                 
                       </ul>
-                
+                  
                 <div class="input-field col s9">
-                    <form action="/calculadora" method="POST">
+                    <form action="/" method="POST">
                         <input placeholder="Ingrese comando" id="comando" name="comando" type="text" class="validate">
                         <label class="Active"></label>
-                     <button class="btn-small red waves-effect waves-light" type="submit">Submit
+                     <button class="btn-small red waves-effect waves-light" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                      </button>
                     </form>
@@ -39,7 +39,6 @@
 
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             M.AutoInit();
